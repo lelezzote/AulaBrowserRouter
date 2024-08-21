@@ -1,4 +1,51 @@
-.paginaHome{
-    background-color: black;
-    padding:0px,
-}
+.navbar-header{
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-menu{
+    background-color: grey;
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+  
+  }
+  .navbar-menu li {
+    cursor: pointer;
+    padding:5px 10px;
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+  
+  }
+  .navbar-menu li:hover{
+    background-color:darkgreen;
+  }
+
+  .navbar{
+    background-color: grey;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+  .card-p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+  }
+ .card{
+   height: 280px;
+   width: 200px;
+ }
+
+ footer{
+    margin:0px;
+    display: flex;
+    justify-content: space-between;
+      background-color: black;
+      color: #fff;
+      padding: 20px;
+      height: 200px;
+  }
+
+  .card-main{
+    align-items: center;
+  }

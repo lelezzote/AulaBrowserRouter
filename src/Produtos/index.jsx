@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -11,15 +11,15 @@ export default function Produtos(){
 
             id: 1,
 
-            item: "Moletom Baw",
+            item: "Nome: Moletom Baw",
 
             imagem: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSLWIkoOawkYEMNEcpCi8AckUXMnBYI4bUUy-vsXBBEf-TWbOsPkr324fZAldqEvh4-J2NfUFGN8puZhYOQbzqZpLYbYCB1eRrIIiSS_yQ&usqp=CAE",
 
-            tamanho:"M",
+            tamanho:"Tamanho: M",
 
-            composicao:" 100% Algodão",
+            composicao:"Composição: 100% Algodão",
 
-            preco: "R$ 199,00"
+            preco: "Preço: R$ 199,00"
 
         },
 
@@ -27,15 +27,15 @@ export default function Produtos(){
 
             id: 2,
 
-            item: "Camiseta Baw",
+            item: "Nome: Camiseta Baw",
 
             imagem: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQlUgUjgvXuCqsnTbxlyrZVp_qgTNwdwtLFUJMMbmPoi2jTH_ChQZNwtQ0t41f7ZFmklYKgwTs433QGQXV0Xwcw00cq4IQHzQeTFL5WVRvpHIzd-dDpzXGq&usqp=CAE",
 
-            tamanho:"M",
+            tamanho:"Tamanho: M",
 
-            composicao:" 100% Algodão",
+            composicao:"Composição: 100% Algodão",
 
-            preco: "R$ 179,00"
+            preco: "Preço: R$ 179,00"
 
         },
 
@@ -43,15 +43,15 @@ export default function Produtos(){
 
             id: 3,
 
-            item: "Moletom Roxo Baw",
+            item: "Nome: Moletom Roxo Baw",
 
             imagem: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRn0IGkoZqIokG4SM0lrpCAllDXxFx7Xs1wOP2eAXgUkMYs_t6VxmEGUVl9c0fUF4bMFaADSqGHUkJZcTY0HflJNs5XmfTWTtn8WLiIRrTnvP_KD7lvXME77w&usqp=CAE",
 
-            tamanho:"GG",
+            tamanho:"Tamanho: GG",
 
-            composicao:" 100% Algodão",
+            composicao:"Composição: 100% Algodão",
 
-            preco: "R$ 199,00"
+            preco: "Preço: R$ 199,00"
 
         },
 
@@ -59,172 +59,172 @@ export default function Produtos(){
 
             id: 4,
 
-            item: "Camisa Over Baw",
+            item: "Nome: Camisa Over Baw",
 
             imagem: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSPufhdi2N1YwjNSJW32ZMgknxwsL8nDgZLtUXdTq9WPLlqcTr5JQ1FnPl4kbS2Zv_2IxiGb7bOVDHMeJc20DDa6ZBHUI47VaTI9XNGTeCqwgtANz4KNFwUIA&usqp=CAE",
  
-            tamanho:"P",
+            tamanho:"Tamanho: P",
 
-            composicao:" 100% Algodão",
+            composicao:"Composição: 100% Algodão",
 
-            preco: "R$ 119,00"
+            preco: "Preço: R$ 119,00"
 
         },
         {
             id:5,
 
-            item:"Bermuda Baw",
+            item:"Nome: Bermuda Baw",
 
             imagem:"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT5IAdCg7M7a6pOtgl3Dp9NXuRrJSw0fxsMfm55qXdubpzROW0ei4mTW9Q5COIcXBmM_8EXkZvoMxWzcmxPXXM2agaP7pvTjc7i1j7mS4wWv4u2qj8SGBDvBg&usqp=CAE",
 
-            tamanho:"M",
+            tamanho:"Tamanho: M",
 
-            composicao:" 100% Algodão",
+            composicao:"Composição: 100% Algodão",
 
-            preco:"R$ 104,45"
+            preco:"Preço: R$ 104,45"
         },
         {
             id:6,
 
-            item:"Calça Street Baw",
+            item:"Nome: Calça Street Baw",
 
             imagem:"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTnHqiySKMHsmxRudN7_Y3oJc1x1TYdNSPMIueKjABHCjFiXUJkGzs3TykNlnTtKQouCdf_zlS4jbtpI6q7lSjK3A9A7q5GlqGwsYPfbfRyFlaxNwKMb-ms&usqp=CAE",
 
-            tamanho:"G",
+            tamanho:"Tamanho: G",
 
-            composicao:" 100% Algodão",
+            composicao:"Composição: 100% Algodão",
 
-            preco:"R$ 249,00"
+            preco:"Preço: R$ 249,00"
         },
         {
             id:7,
 
-            item: "Pochete Baw",
+            item: "Nome: Pochete Baw",
 
             imagem: "https://www.bawclothing.com.br/live/invoke/website/loaders/image.ts?src=https%3A%2F%2Fbawclothing.vtexassets.com%2Farquivos%2Fids%2F271096%2Fimage-77fb26393d224056ac971ff94c45b03d.jpg%3Fv%3D638230556951900000&fit=cover&width=1240&height=1860",
 
-            tamanho:"U",
+            tamanho:"Tamanho: U",
 
-            composicao:"100% Poliamida",
+            composicao:"Composição: 100% Poliamida",
 
-            preco:"R$ 69,80"
+            preco:"Preço: R$ 69,80"
         },
         {
             id:8,
 
-            item: "Parachute Paants",
+            item: "Nome: Parachute Paants",
 
             imagem: "https://www.bawclothing.com.br/live/invoke/website/loaders/image.ts?src=https%3A%2F%2Fbawclothing.vtexassets.com%2Farquivos%2Fids%2F332981%2F0085770040_02.jpg%3Fv%3D638557918595370000&fit=cover&width=560&height=840",
 
-            tamanho:"M",
+            tamanho:"Tamanho: M",
 
-            composicao:"100%  Poliamida",
+            composicao:"Composiçao: 100%  Poliamida",
 
-            preco:"R$ 379,00"
+            preco:"Preço: R$ 379,00"
         },
         {
             id:9,
 
-            item: "Jaqueta Jeans",
+            item: "Nome: Jaqueta Jeans",
 
             imagem: "https://www.bawclothing.com.br/live/invoke/website/loaders/image.ts?src=https%3A%2F%2Fbawclothing.vtexassets.com%2Farquivos%2Fids%2F332738%2F0086605040_02.jpg%3Fv%3D638555419557330000&fit=cover&width=560&height=840",
             
-            tamanho:"P",
+            tamanho:"Tamanho: P",
 
-            composicao:"100% Algodão",
+            composicao:"Composiçaõ: 100% Algodão",
 
-            preco:"R$ 339,00"
+            preco:"Preço: R$ 339,00"
         },
         {
             id:10,
 
-            item: "Denim Jacket",
+            item: "Nome: Denim Jacket",
 
             imagem: "https://www.bawclothing.com.br/live/invoke/website/loaders/image.ts?src=https%3A%2F%2Fbawclothing.vtexassets.com%2Farquivos%2Fids%2F332869%2F0085454040_02.jpg%3Fv%3D638556116912970000&fit=cover&width=560&height=840",
 
-            tamanho:"GG",
+            tamanho:"Tamanho: GG",
 
-            composicao:"100% Algodão",
+            composicao:"Composição: 100% Algodão",
 
-            preco:"R$ 519,00"
+            preco:"Preço: R$ 519,00"
         },
         {
             id:10,
 
-            item: "Denim Jacket",
+            item: "Nome: Denim Jacket",
 
             imagem: "https://www.bawclothing.com.br/live/invoke/website/loaders/image.ts?src=https%3A%2F%2Fbawclothing.vtexassets.com%2Farquivos%2Fids%2F332869%2F0085454040_02.jpg%3Fv%3D638556116912970000&fit=cover&width=560&height=840",
 
-            tamanho:"GG",
+            tamanho:"Tamanho: GG",
 
-            composicao:"100% Algodão",
+            composicao:"Composição: 100% Algodão",
 
-            preco:"R$ 519,00"
+            preco:"Preço: R$ 519,00"
         },
         {
             id:11,
 
-            item: "Camiseta Emotinally",
+            item: "Nome: Camiseta Emotinally",
 
             imagem: "https://www.bawclothing.com.br/live/invoke/website/loaders/image.ts?src=https%3A%2F%2Fbawclothing.vtexassets.com%2Farquivos%2Fids%2F332690%2F0085445040_02.jpg%3Fv%3D638555373936570000&fit=cover&width=560&height=840",
             
-            tamanho:"M",
+            tamanho:"Tamanho: M",
 
-            composicao:"100% Algodão",
+            composicao:"Composição: 100% Algodão",
 
-            preco:"R$ 189,00"
+            preco:"Preço: R$ 189,00"
         },
         {
             id:12,
 
-            item: "Bermuda Cargo",
+            item: "Nome: Bermuda Cargo",
 
             imagem: "https://www.bawclothing.com.br/live/invoke/website/loaders/image.ts?src=https%3A%2F%2Fbawclothing.vtexassets.com%2Farquivos%2Fids%2F332817%2F0085465040_02.jpg%3Fv%3D638555514380830000&fit=cover&width=560&height=840",
 
-            tamanho:"G",
+            tamanho:"Tamanho: G",
 
-            composicao:"100% Algodão",
+            composicao:"Composição: 100% Algodão",
 
-            preco:"R$ 389,00"
+            preco:"Preço: R$ 389,00"
         },
         {
             id:13,
 
-            item: "Moletom Hoodie",
+            item: "Nome: Moletom Hoodie",
 
             imagem: "https://www.bawclothing.com.br/live/invoke/website/loaders/image.ts?src=https%3A%2F%2Fbawclothing.vtexassets.com%2Farquivos%2Fids%2F282811%2F0084581037_02.jpg%3Fv%3D638464745651400000&fit=cover&width=560&height=840",
 
-            tamanho:"GG",
+            tamanho:"Tamanho: GG",
 
-            composicao:"100% Poliéster",
+            composicao:"Composição: 100% Poliéster",
 
-            preco:"R$ 399,00"
+            preco:"Preço: R$ 399,00"
         },
         {
             id:14,
 
-            item: "Moletom Ridge",
+            item: "Nome: Moletom Ridge",
 
             imagem: "https://www.bawclothing.com.br/live/invoke/website/loaders/image.ts?src=https%3A%2F%2Fbawclothing.vtexassets.com%2Farquivos%2Fids%2F280054%2F0082679006_02.jpg%3Fv%3D638441446842230000&fit=cover&width=560&height=840",
 
-            tamanho:"M",
+            tamanho:"Tamanho: M",
 
-            composicao:"100% Algodão",
+            composicao:"Composição: 100% Algodão",
 
-            preco:"R$ 249,00"
+            preco:"Preço: R$ 249,00"
         },
         {
             id:15,
 
-            item: "Calça Track",
+            item: "Nome: Calça Track",
 
             imagem: "https://www.bawclothing.com.br/live/invoke/website/loaders/image.ts?src=https%3A%2F%2Fbawclothing.vtexassets.com%2Farquivos%2Fids%2F282738%2F0084578037_01.jpg%3Fv%3D638464725379830000&fit=cover&width=1240&height=1860",
 
-            tamanho:"M",
+            tamanho:"Tamanho: M",
 
-            composicao:"100% Poliéster",
+            composicao:"Composição: 100% Poliéster",
 
-            preco:"R$ 309,00"
+            preco:"Preço: R$ 309,00"
         }
     ]);
 
@@ -240,9 +240,14 @@ export default function Produtos(){
             {
             listaProdutos.map((produto)=>
             <div key = {produto.id}>
-            <p>{produto.item}</p>
-            <p>{produto.preco}</p>
-            <button onClick={()=> adicionarPedidos(produto)}>Adicionar</button>
+           <div>
+            <img className="card" src={produto.imagem} alt=""/>
+            </div>
+            <p className='card-p'>{produto.item}</p>
+            <p className='card-p'>{produto.tamanho}</p>
+            <p className='card-p'>{produto.preco}</p>
+            <p className='card-p'>{produto.composicao}</p>
+            <button onClick={()=> adicionarPedidos(produto)}>Comprar</button>
             </div>
             )
           }

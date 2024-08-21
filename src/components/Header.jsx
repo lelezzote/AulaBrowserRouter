@@ -5,10 +5,12 @@ export default function Header(){
     return(
     
     <>
-    <nav>
-        <ul>
-            <Link to="/home">
-               <li> Home </li>
+    <nav className='navbar'>
+    <div className="navbar-header">
+    
+        <ul className="navbar-menu">
+            <Link to="/">
+               <li className="navbar-li"> Home </li>
             </Link>
             <Link to="/produtos">
                <li> Produtos </li>
@@ -17,9 +19,9 @@ export default function Header(){
                <li> Oferta </li>
             </Link>
         </ul>
+    
+    </div>
     </nav>
-    
-    
     </>
 
     
