@@ -1,6 +1,9 @@
+import React, { useState } from 'react'
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 
 export default function Home(){
     const [listaProdutos, setProdutos] = useState([
@@ -99,23 +102,11 @@ export default function Home(){
     
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     return(
     <>
     
     <Header/>
-    <div class="paginaHome">Home</div>
+    <div></div>
     <Carousel
                 infiniteLoop
                 useKeyboardArrows
@@ -126,19 +117,38 @@ export default function Home(){
                 dynamicHeight
              >
                 <div>
-                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fbaw_officialbr&psig=AOvVaw1bg6PtdP3fmln6EVOYyA3-&ust=1724274222425000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKiky5q8hIgDFQAAAAAdAAAAABAE"
+                    <img src="https://adnews.com.br/wp-content/uploads/2022/04/Banner-8-3.png"
                      alt="Slide 1" />
                 </div>
                <div>
-                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.oqvestir.com.br%2Fmarcas%2Fbaw-clothing%3Ffiltro%3DGenero__UNISSEX&psig=AOvVaw2kGq7B400KRP-9IXSCQ3Mj&ust=1724274314817000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMCWwMi8hIgDFQAAAAAdAAAAABAE"
+                <img src="https://atendimento.bawclothing.com.br/hc/theming_assets/01HZPG2RJ0DT5AWX440RA9Z7F9"
                  alt="Slide 2"/>
                </div>
                <div>
-                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pegadesconto.com.br%2Fdesconto%2Fbaw-clothing%2F&psig=AOvVaw2YmK8ZrCBsomRpOBJRU_MA&ust=1724274383555000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKD36-O8hIgDFQAAAAAdAAAAABAJ"
+                <img src="https://abramark.com.br/wp-content/uploads/2023/07/BannerNoticias-38.png"
                  alt="Slide 3"/>
                </div>
             </Carousel>
             
+            {
+            listaProdutos.map((produto)=>
+            <div key = {produto.id}>
+            <p>{produto.item}</p>
+            <p>{produto.preco}</p>
+            <button onClick={()=> adicionarPedidos(produto)}>Adicionar</button>
+            </div>
+            )
+          }
+
+
+<Footer/>
+
+
+
+
+
+
+          
     </>
 
     )

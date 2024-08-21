@@ -1,10 +1,10 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-export default function Produtos(){
+export default function Oferta(){
     const [listaProdutos, setProdutos] = useState([
 
         {
@@ -147,84 +147,6 @@ export default function Produtos(){
             composicao:"100% Algodão",
 
             preco:"R$ 519,00"
-        },
-        {
-            id:10,
-
-            item: "Denim Jacket",
-
-            imagem: "https://www.bawclothing.com.br/live/invoke/website/loaders/image.ts?src=https%3A%2F%2Fbawclothing.vtexassets.com%2Farquivos%2Fids%2F332869%2F0085454040_02.jpg%3Fv%3D638556116912970000&fit=cover&width=560&height=840",
-
-            tamanho:"GG",
-
-            composicao:"100% Algodão",
-
-            preco:"R$ 519,00"
-        },
-        {
-            id:11,
-
-            item: "Camiseta Emotinally",
-
-            imagem: "https://www.bawclothing.com.br/live/invoke/website/loaders/image.ts?src=https%3A%2F%2Fbawclothing.vtexassets.com%2Farquivos%2Fids%2F332690%2F0085445040_02.jpg%3Fv%3D638555373936570000&fit=cover&width=560&height=840",
-            
-            tamanho:"M",
-
-            composicao:"100% Algodão",
-
-            preco:"R$ 189,00"
-        },
-        {
-            id:12,
-
-            item: "Bermuda Cargo",
-
-            imagem: "https://www.bawclothing.com.br/live/invoke/website/loaders/image.ts?src=https%3A%2F%2Fbawclothing.vtexassets.com%2Farquivos%2Fids%2F332817%2F0085465040_02.jpg%3Fv%3D638555514380830000&fit=cover&width=560&height=840",
-
-            tamanho:"G",
-
-            composicao:"100% Algodão",
-
-            preco:"R$ 389,00"
-        },
-        {
-            id:13,
-
-            item: "Moletom Hoodie",
-
-            imagem: "https://www.bawclothing.com.br/live/invoke/website/loaders/image.ts?src=https%3A%2F%2Fbawclothing.vtexassets.com%2Farquivos%2Fids%2F282811%2F0084581037_02.jpg%3Fv%3D638464745651400000&fit=cover&width=560&height=840",
-
-            tamanho:"GG",
-
-            composicao:"100% Poliéster",
-
-            preco:"R$ 399,00"
-        },
-        {
-            id:14,
-
-            item: "Moletom Ridge",
-
-            imagem: "https://www.bawclothing.com.br/live/invoke/website/loaders/image.ts?src=https%3A%2F%2Fbawclothing.vtexassets.com%2Farquivos%2Fids%2F280054%2F0082679006_02.jpg%3Fv%3D638441446842230000&fit=cover&width=560&height=840",
-
-            tamanho:"M",
-
-            composicao:"100% Algodão",
-
-            preco:"R$ 249,00"
-        },
-        {
-            id:15,
-
-            item: "Calça Track",
-
-            imagem: "https://www.bawclothing.com.br/live/invoke/website/loaders/image.ts?src=https%3A%2F%2Fbawclothing.vtexassets.com%2Farquivos%2Fids%2F282738%2F0084578037_01.jpg%3Fv%3D638464725379830000&fit=cover&width=1240&height=1860",
-
-            tamanho:"M",
-
-            composicao:"100% Poliéster",
-
-            preco:"R$ 309,00"
         }
     ]);
 
@@ -235,7 +157,7 @@ export default function Produtos(){
     <>
     
     <Header/>
-  
+    
             
             {
             listaProdutos.map((produto)=>
