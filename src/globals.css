@@ -36,25 +36,30 @@ body{
   .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 12px; /* Menor espaçamento entre os cards */
+    gap: 14px; /* Menor espaçamento entre os cards */
     padding: 12px;
   }
   
   .card-main {
     border: 1px solid #ccc;
-    border-radius: 6px; /* Bordas ligeiramente arredondadas */
+    border-radius: 6px; 
     overflow: hidden;
     padding: 12px;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    width: 400px;
+    margin-left: 95px;
   }
-  
+
+  .card-principal{
+    padding-left: 100px;
+  }
   .card-main img.card {
-   
     border-bottom: 1px solid #ddd;
   }
   
   .card-p {
+    padding-left: 100px;
     margin: 4px 0; /* Margens menores para texto */
     font-size: 0.9rem; /* Fonte um pouco menor */
   }
@@ -70,9 +75,13 @@ body{
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #153c66;
   }
   
+  .button-principal{
+    margin-left: 99px;
+   
+  }
 
 
   .card-p{
