@@ -7,7 +7,6 @@ import Produtos from './Produtos'
 import Oferta from './Oferta'
 
 
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
