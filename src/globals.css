@@ -1,3 +1,7 @@
+body{
+  margin:0;
+}
+
 .navbar-header{
     display: flex;
     align-items: center;
@@ -21,13 +25,56 @@
   }
 
   .navbar{
-    background-image:url(https://i.pinimg.com/736x/f8/eb/80/f8eb8000a79c4c0b03bcbe8c68dc9eca.jpg) ;
+    background-image:url(https://pin.it/131MYKsn4) ;
+    background-size: 2000px;
     background-color: rgb(18, 18, 18);
     color:white;
     display: flex;
     justify-content: space-between;
   }
  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px; /* Menor espaçamento entre os cards */
+    padding: 12px;
+  }
+  
+  .card-main {
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Bordas ligeiramente arredondadas */
+    overflow: hidden;
+    padding: 12px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+  }
+  
+  .card-main img.card {
+   
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .card-p {
+    margin: 4px 0; /* Margens menores para texto */
+    font-size: 0.9rem; /* Fonte um pouco menor */
+  }
+  
+  button {
+    background-color: #1c232a;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem; /* Fonte um pouco menor */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
   .card-p{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
   }
