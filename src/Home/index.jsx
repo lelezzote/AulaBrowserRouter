@@ -107,7 +107,6 @@ export default function Home(){
     <>
     
     <Header/>
-    <div></div>
     <Carousel
                 infiniteLoop
                 useKeyboardArrows
@@ -118,15 +117,15 @@ export default function Home(){
                 dynamicHeight
              >
                 <div>
-                    <img src="https://rsv-blog-hml.s3.us-east-2.amazonaws.com/BANNER_LP_BONITE_09a7a1ada9.jpg"
+                    <img className='img-carousel' src="https://rsv-blog-hml.s3.us-east-2.amazonaws.com/BANNER_LP_BONITE_09a7a1ada9.jpg"
                      alt="Slide 1" />
                 </div>
                <div>
-                <img src="https://files.oaiusercontent.com/file-9pM31ESB9iXGUFAjcuD6EZnC?se=2024-08-22T00%3A41%3A19Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D614b944c-35ae-4bc8-b377-aebb3c946c55.webp&sig=4CPOghdPMS0n%2BWMKxtRWC9AkL%2BAF5H5txaeGXjXwvuM%3D"
+                <img className='img-carousel' src="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1285/4cb0e077-bd04-483a-b811-9cfedf3f814f"
                  alt="Slide 2"/>
                </div>
                <div>
-                <img src="https://abramark.com.br/wp-content/uploads/2023/07/BannerNoticias-38.png"
+                <img className='img-carousel' src="https://abramark.com.br/wp-content/uploads/2023/07/BannerNoticias-38.png"
                  alt="Slide 3"/>
                </div>
             </Carousel>

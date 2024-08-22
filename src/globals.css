@@ -1,14 +1,13 @@
 .navbar-header{
     display: flex;
     align-items: center;
+    height: 150px;
   }
 
   .navbar-menu{
     background-color: grey;
     display: flex;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
-  
   }
   .navbar-menu li {
     cursor: pointer;
@@ -22,7 +21,8 @@
   }
 
   .navbar{
-    background-color: grey;
+    background-image:url(https://i.pinimg.com/736x/f8/eb/80/f8eb8000a79c4c0b03bcbe8c68dc9eca.jpg) ;
+    background-color: rgb(18, 18, 18);
     color:white;
     display: flex;
     justify-content: space-between;
@@ -79,3 +79,12 @@
   padding-top: -100px;
 }
  
+
+.img-carousel{
+  width: 1000px;
+  height: 770px;
+}
+
+.img-app{
+  padding-top: 100px;
+}
