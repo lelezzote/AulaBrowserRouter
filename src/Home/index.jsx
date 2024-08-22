@@ -118,11 +118,11 @@ export default function Home(){
                 dynamicHeight
              >
                 <div>
-                    <img src="https://adnews.com.br/wp-content/uploads/2022/04/Banner-8-3.png"
+                    <img src="https://rsv-blog-hml.s3.us-east-2.amazonaws.com/BANNER_LP_BONITE_09a7a1ada9.jpg"
                      alt="Slide 1" />
                 </div>
                <div>
-                <img src="https://atendimento.bawclothing.com.br/hc/theming_assets/01HZPG2RJ0DT5AWX440RA9Z7F9"
+                <img src="https://files.oaiusercontent.com/file-9pM31ESB9iXGUFAjcuD6EZnC?se=2024-08-22T00%3A41%3A19Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D614b944c-35ae-4bc8-b377-aebb3c946c55.webp&sig=4CPOghdPMS0n%2BWMKxtRWC9AkL%2BAF5H5txaeGXjXwvuM%3D"
                  alt="Slide 2"/>
                </div>
                <div>

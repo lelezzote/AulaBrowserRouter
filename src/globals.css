@@ -18,7 +18,7 @@
   
   }
   .navbar-menu li:hover{
-    background-color:darkgreen;
+    color: 	#87CEEB;
   }
 
   .navbar{
@@ -46,6 +46,36 @@
       height: 200px;
   }
 
-  .card-main{
-    align-items: center;
+  .logo-footer{
+    width: 150px;
+    height: 200px;
+    padding-left: 30px;
   }
+
+  .icons{
+    width: 100x;
+    height: 80px;
+    padding-top: 50px;
+    padding-right: 20px;
+  }
+
+
+  .navbar-footer{
+    
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: -190px;
+  }
+  
+  .navbar-footer li {
+    padding:5px 10px;
+    list-style: none;
+  }
+  
+.navbar-footer-secundary{
+  list-style: none;
+  padding:5px 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-left: 750px;
+  padding-top: -100px;
+}
+ 
