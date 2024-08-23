@@ -25,11 +25,11 @@ body{
   }
 
   .navbar{
-    background-image:url(https://pin.it/131MYKsn4) ;
+    background-image:url() ;
     background-size: 2000px;
     background-color: rgb(18, 18, 18);
     color:white;
-    display: flex;
+    display: flexbox;
     justify-content: space-between;
   }
  
@@ -50,6 +50,9 @@ body{
     width: 400px;
     margin-left: 95px;
   }
+  .card-main:hover {
+    transform: scale(1.05);
+}
 
   .card-principal{
     padding-left: 100px;
@@ -143,4 +146,18 @@ body{
 
 .img-app{
   padding-top: 100px;
+}
+
+.img-brasil{
+  padding-left: 1800px;
+  margin-top: -240px;
+}
+
+.img-br{
+  height: 30px ;
+  width: 40px;
+}
+
+.img-bra{
+  list-style: none;
 }

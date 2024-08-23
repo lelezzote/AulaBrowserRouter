@@ -15,7 +15,7 @@ export default function Header(){
             <Link to="/produtos">
                <li> Produtos </li>
             </Link>
-            <Link to="/oferta">
+            <Link to="/ofertas">
                <li> Oferta </li>
             </Link>
         </ul>
