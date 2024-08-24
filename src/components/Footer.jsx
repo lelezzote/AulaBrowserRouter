@@ -14,20 +14,7 @@ export default function Footer(){
                 <li>Meus Pedidos</li>
                 <li>Meu Carrinho</li>
             </ul>
-            <div className="img-brasil">
-            <ul className="img-bra">
-                <li>
-                    <img className="img-br" src="https://www.curitiba.pr.leg.br/atividade-parlamentar/legislacao/imagens/bandeira-do-brasil.png/image"/>
-                </li>
-            </ul>
-            </div>
-            <div className="img">
-            <ul className="img">
-                <li>
-                    <img className="img" src=""/>
-                </li>
-            </ul>
-            </div>
+            
             
             </div>
 

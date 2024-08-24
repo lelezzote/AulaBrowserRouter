@@ -1,32 +1,31 @@
 body{
   margin:0;
+  background-image: url();
 }
 
 .navbar-header{
     display: flex;
     align-items: center;
-    height: 150px;
+    height: 140px;
   }
 
   .navbar-menu{
-    background-color: grey;
     display: flex;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
   }
   .navbar-menu li {
     cursor: pointer;
-    padding:5px 10px;
+    padding:5px 20px;
     list-style: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
-  
+    font-size: 20px;
+    color: #fff;
   }
   .navbar-menu li:hover{
-    color: 	#87CEEB;
+    transform:  scaleX(1.05);
   }
 
   .navbar{
-    background-image:url() ;
-    background-size: 2000px;
     background-color: rgb(18, 18, 18);
     color:white;
     display: flexbox;
@@ -41,13 +40,12 @@ body{
   }
   
   .card-main {
-    border: 1px solid #ccc;
-    border-radius: 6px; 
+    border-radius: 8px; 
     overflow: hidden;
-    padding: 12px;
+    padding: 14px;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+    width: 370px;
     margin-left: 95px;
   }
   .card-main:hover {
@@ -75,6 +73,7 @@ body{
     border-radius: 4px;
     cursor: pointer;
     font-size: 0.9rem; /* Fonte um pouco menor */
+    
   }
   
   button:hover {
@@ -102,7 +101,9 @@ body{
       background-color: black;
       color: #fff;
       padding: 20px;
-      height: 200px;
+      height: 330px;
+      background-image:url(https://www.bawclothing.com.br/live/invoke/website/loaders/image.ts?src=https%3A%2F%2Fozksgdmyrqcxcwhnbepg.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fassets%2F1285%2Ff34d3af6-2064-4565-bd35-b4e65bd3b9eb&fit=cover&width=1440&height=400) ;
+    
   }
 
   .logo-footer{
@@ -148,16 +149,3 @@ body{
   padding-top: 100px;
 }
 
-.img-brasil{
-  padding-left: 1800px;
-  margin-top: -240px;
-}
-
-.img-br{
-  height: 30px ;
-  width: 40px;
-}
-
-.img-bra{
-  list-style: none;
-}

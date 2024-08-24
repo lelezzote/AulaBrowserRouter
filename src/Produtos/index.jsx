@@ -16,9 +16,9 @@ export default function Produtos(){
 
             imagem: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSLWIkoOawkYEMNEcpCi8AckUXMnBYI4bUUy-vsXBBEf-TWbOsPkr324fZAldqEvh4-J2NfUFGN8puZhYOQbzqZpLYbYCB1eRrIIiSS_yQ&usqp=CAE",
 
-            tamanho:"Tamanho: M",
+            tamanho:["Tamanho: PP-P-M-G-GG-3G"],
 
-            composicao:["Tamanho: PP-P-M-G-GG-3G"],
+            composicao:"Composição: 100% Algodão",
 
             preco: "Preço: R$ 199,00"
 
