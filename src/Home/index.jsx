@@ -70,7 +70,7 @@ export default function Home(){
 
             composicao:"Composição: 100% Algodão",
 
-            preco: "Tamanho: R$ 119,00"
+            preco: "Preço: R$ 119,00"
 
         },
         {
@@ -100,7 +100,7 @@ export default function Home(){
             preco:"Preço: R$ 249,00"
         },
         {
-          id:17,
+          id:7,
 
           item: "Nome: Moletom Bunny",
 
@@ -113,7 +113,7 @@ export default function Home(){
           preco:"Preço: R$ 279,00"
       },
       {
-          id:18,
+          id:8,
 
           item: "Nome: Moletom Hoodie R",
 
@@ -126,7 +126,7 @@ export default function Home(){
           preco:"Preço: R$ 369,00"
       },
       {
-          id:19,
+          id:9,
 
           item: "Nome: Gorro Tricot",
 

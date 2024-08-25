@@ -176,6 +176,24 @@ export default function Oferta(){
             preco:"Preço: R$ 259,00"
         }
     ]);
+    
+    
+    const aplicarDesconto = (preco) => {
+        const precoComDesconto = aplicarDesconto(precoOriginal); 
+        let desconto = true;
+        let preco_final = true;
+        if (desconto) {
+            preco_final = preco * 0.9;  
+        } else {
+            preco_final = preco;  
+        }
+    
+
+        console.log(precoComDesconto, preco_final); 
+    }
+    
+
+
 
     
 
