@@ -20,9 +20,11 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
     font-size: 25px;
     color: black;
+
   }
   .navbar-menu li:hover{
     transform:  scaleX(1.05);
+    
   }
 
   .navbar{
@@ -40,21 +42,27 @@ body{
   .carrinho{
     height: 35px;
     width: 35px;
-    padding-top: -2px ;
-    padding-left: 670x;
+    margin-left: 20px;
   }
   
   .login{
     height: 35px;
     width: 35px;
-    padding-left: px;
-    gap: 10px 15px;
+    margin-left: 1060px;
+  }
+
+
+
+  .nav-link{
+    text-decoration: none;
   }
  
+
+  
   .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 14px; /* Menor espaçamento entre os cards */
+    gap: 20px; /* Menor espaçamento entre os cards */
     padding: 12px;
   }
   
@@ -84,8 +92,19 @@ body{
     margin: 4px 0; /* Margens menores para texto */
     font-size: 0.9rem; /* Fonte um pouco menor */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+
   }
-  
+
+  .valor-riscado {
+    text-decoration: line-through;
+}
+
+.novo-valor {
+  font-weight: bold; 
+  background-color: #c0bbbb;
+  border-radius: 2px;
+}
+
   button {
     padding-right: 100px;
     background-color: #1c232a;
@@ -115,6 +134,8 @@ body{
    border-radius: 8px;
    padding-right: 20px;
  }
+
+ 
 
  footer{
     margin:0px;
@@ -178,14 +199,92 @@ body{
 
 
 
+/*CELULAR*/
+/* Para telas menores que 700px (dispositivos móveis) */
+@media screen and (max-width: 700px) {
+  .navbar {
+    height:100px ;
+    width:50px ;
+  }
+  .logo-nav{
+    width: 50px;
+    height:30px;
+  }
+  .navbar-menu li{
+    font-size: 15px;
+  }
+  .navbar-menu{
+   margin: 0px;
+   padding: 0px;
+  }
+  .navbar-second{
+    margin: 0px;
+    padding: 0px;
+  }
+  .login{
+    margin:0px;
+    height: 20px;
+    width:15px;
+  }
+  .carrinho{
+    margin:0px;
+    height: 20px;
+    width:15px;
+  }
 
-/* Para telas menores que 768px (dispositivos móveis) */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
+  .header{
+    display:flex;
   }
 }
+
+@media (max-width: 700px) {
+  .card-container {
+    grid-template-columns: 1fr; /* Um card por linha */
+    padding: 0px;
+    margin-right: 0px;
+  }
+  .card-main{
+    margin: 0px;
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .img-carousel {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+  }
+}
+
+
+/*TABLETS*/
+
+media screen and (min-width: 900px) and (max-width:1024px){
+     .login{
+      height: 20px;
+      margin: 0px;
+     }
+     .header{
+      margin: 0px;
+     }
+}
+
+
+@media (min-width: 900px) and (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* Dois cards por linha */
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+  .img-carousel {
+    width: 100%;
+    height: auto; 
+  }
+}
+
+
+/*NOTEBOOKS*/
 
 /* Para tablets e telas pequenas de notebooks */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -234,12 +333,7 @@ body{
 
 
 
-@media (max-width: 768px) {
-  .img-carousel {
-    width: 100%;
-    height: auto; /* Mantém a proporção da imagem */
-  }
-}
+
 
 /* Para tablets e telas menores de notebooks */
 @media (min-width: 769px) and (max-width: 1024px) {

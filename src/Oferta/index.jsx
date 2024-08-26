@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import ListarProdutos from "../components/ListarProdutos";
+import ListarProdutosOferta from "../components/ListarProdutosOferta";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export default function Oferta(){
@@ -20,7 +20,9 @@ export default function Oferta(){
 
             composicao:"Composição: 100% Algodão",
 
-            preco: "Preço: R$ 199,00"
+            precoOriginal: "199,00",
+
+            precoNovo: "179,00"
 
         },
 
@@ -36,7 +38,9 @@ export default function Oferta(){
 
             composicao:"Composição: 100% Algodão",
 
-            preco: "Preço: R$ 179,00"
+            precoOriginal: "179,00",
+
+            precoNovo: "159,00"
 
         },
 
@@ -52,7 +56,9 @@ export default function Oferta(){
 
             composicao:"Composição: 100% Algodão",
 
-            preco: "Preço: R$ 199,00"
+            precoOriginal: "199,00",
+
+            precoNovo: "179,00"
 
         },
 
@@ -68,7 +74,9 @@ export default function Oferta(){
 
             composicao:"Composição: 100% Algodão",
 
-            preco: "Preço: R$ 119,00"
+            precoOriginal: "119,00",
+
+            precoNovo: "99,00"
 
         },
         {
@@ -82,7 +90,9 @@ export default function Oferta(){
 
             composicao:"Composição: 100% Algodão",
 
-            preco:"Preço: R$ 104,45"
+            precoOriginal:"104,45",
+
+            precoNovo: "84,45"
         },
         {
             id:6,
@@ -95,7 +105,9 @@ export default function Oferta(){
 
             composicao:"Composição: 100% Algodão",
 
-            preco:"Preço: R$ 249,00"
+            precoOriginal:"249,00",
+
+            precoNovo: "229,00"
         },
         {
             id:7,
@@ -108,7 +120,9 @@ export default function Oferta(){
 
             composicao:"Composição: 100% Poliamida",
 
-            preco:"Preço: R$ 69,80"
+            precoOriginal:"69,80",
+
+            precoNovo: "49,80"
         },
         {
             id:8,
@@ -121,7 +135,9 @@ export default function Oferta(){
 
             composicao:"Composição: 100%  Poliamida",
 
-            preco:"Preço: R$ 379,00"
+            precoOriginal:"379,00",
+
+            precoNovo: "359,00"
         },
         {
             id:9,
@@ -134,7 +150,9 @@ export default function Oferta(){
 
             composicao:"Composição: 100% Algodão",
 
-            preco:"Preço: R$ 339,00"
+            precoOriginal:"339,00",
+
+            precoNovo: "319,00"
         },
         {
             id:10,
@@ -147,7 +165,9 @@ export default function Oferta(){
 
             composicao:"Composição:100% Algodão",
 
-            preco:"Preço: R$ 519,00"
+            precoOriginal:"519,00",
+
+            precoNovo: "499,00"
         },
         {
             id:11,
@@ -160,7 +180,9 @@ export default function Oferta(){
 
             composicao:"Composição: 100% Acrílico",
 
-            preco:"Preço: R$ 149,00"
+            precoOriginal:"149,00",
+
+            precoNovo: "129,00"
         },
         {
             id:12,
@@ -173,26 +195,14 @@ export default function Oferta(){
 
             composicao:"Composição: 100% Poliamida",
 
-            preco:"Preço: R$ 259,00"
+            precoOriginal:"259,00",
+
+            precoNovo: "239,00"
         }
     ]);
     
     
-    const aplicarDesconto = (preco) => {
-        const precoComDesconto = aplicarDesconto(precoOriginal); 
-        let desconto = true;
-        let preco_final = true;
-        if (desconto) {
-            preco_final = preco * 0.9;  
-        } else {
-            preco_final = preco;  
-        }
     
-
-        console.log(precoComDesconto, preco_final); 
-    }
-    
-
 
 
     
@@ -203,7 +213,7 @@ export default function Oferta(){
     
     <Header/>
     
-    <ListarProdutos lista={listaOferta}/> 
+    <ListarProdutosOferta lista={listaOferta}/> 
     
     
     
