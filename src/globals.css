@@ -235,6 +235,8 @@ body{
   .header{
     display:flex;
   }
+
+   
 }
 
 @media (max-width: 700px) {
@@ -259,10 +261,9 @@ body{
 
 /*TABLETS*/
 
-media screen and (min-width: 900px) and (max-width:1024px){
+@media screen and (min-width: 768px) and (max-width:1024px){
      .login{
-      height: 20px;
-      margin: 0px;
+      margin: 0%;
      }
      .header{
       margin: 0px;
@@ -270,13 +271,13 @@ media screen and (min-width: 900px) and (max-width:1024px){
 }
 
 
-@media (min-width: 900px) and (max-width: 1024px) {
+@media screen and (min-width: 900px) and (max-width: 1024px) {
   .card-container {
     grid-template-columns: repeat(2, 1fr); /* Dois cards por linha */
   }
 }
 
-@media (min-width: 900px) and (max-width: 1024px) {
+@media screen and (min-width: 900px) and (max-width: 1024px) {
   .img-carousel {
     width: 100%;
     height: auto; 
@@ -287,66 +288,41 @@ media screen and (min-width: 900px) and (max-width:1024px){
 /*NOTEBOOKS*/
 
 /* Para tablets e telas pequenas de notebooks */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
+@media screen and (min-width: 1025px) {
+    .login{
+  
+    
   }
 }
 
-@media (min-width: 1025px) {
-  .header {
-    flex-direction: row;
-    align-items: center;
-    padding: 10px 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .card-container {
-    grid-template-columns: 1fr; /* Um card por linha */
-    padding: 8px;
-    padding-right: 50px;
-  }
-}
-
-/* Para tablets e telas pequenas de notebooks */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .card-container {
-    grid-template-columns: repeat(2, 1fr); /* Dois cards por linha */
-  }
-}
-
-@media (min-width: 1025px) {
+@media screen and (min-width: 1025px) {
   .card-container {
     grid-template-columns: repeat(3, 1fr); /* Três cards por linha */
     gap: 14px; /* Espaçamento padrão entre os cards */
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* Para tablets e telas menores de notebooks */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .img-carousel {
-    width: 100%;
-    height: auto; /* Mantém a proporção da imagem */
-  }
-}
-
 /* Para telas grandes e notebooks */
-@media (min-width: 1025px) {
+@media screen and (min-width: 1025px) {
   .img-carousel {
     width: 1000px;
     height: 770px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
