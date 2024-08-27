@@ -22,10 +22,7 @@ export default function Header(){
             </Link>
         </ul>
 
-        <ul className="header">
-        <img className='login' src="https://cdn-icons-png.flaticon.com/128/1077/1077063.png"/>
-        <img className="carrinho" src='https://cdn-icons-png.flaticon.com/128/34/34568.png'/>
-        </ul>
+       
     
     </div>
     </nav>
