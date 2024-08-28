@@ -9,9 +9,9 @@ export default function ListarProdutosOferta({  lista  }){
             </div>
             <p className="card-p">{produto.item}</p>
             {
-            produto.tamanho && produto.tamanho.map((tamanho, index) => (
-            <p className="card-p" key={index}>{tamanho}</p>
-          ))}
+            produto.tamanho.map((size) => (
+              <p className="card-p">{size}</p>
+               ))}
           <p className="card-p">Preço: <span class="valor-riscado">R${produto.precoOriginal}</span><span> - </span> <span class="novo-valor">R${produto.precoNovo}</span></p>
           <p className="card-p">{produto.preco}</p>
             <p className="card-p">{produto.composicao}</p>
